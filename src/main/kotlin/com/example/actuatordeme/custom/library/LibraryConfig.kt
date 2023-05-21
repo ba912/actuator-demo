@@ -1,4 +1,4 @@
-package com.example.actuatordeme.actuator.library
+package com.example.actuatordeme.custom.library
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration

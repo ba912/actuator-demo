@@ -1,4 +1,4 @@
-package com.example.actuatordeme.actuator.library
+package com.example.actuatordeme.custom.library
 
 data class Library(
     val name: String,

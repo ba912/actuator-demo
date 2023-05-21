@@ -1,4 +1,4 @@
-package com.example.actuatordeme.actuator.library
+package com.example.actuatordeme.custom.library
 
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
