@@ -10,7 +10,7 @@ class MyStockMeterBinderConfig {
     @Bean
     fun customMeterBinder(myStockManager: MyStockManager): MeterBinder {
         return MeterBinder { registry ->
-            Gauge.builder("my.stock", myStockManager::getStockCount).register(registry)
+            Gauge.builder("my.stock", myStockManager).register(registry)
         }
     }
 }
