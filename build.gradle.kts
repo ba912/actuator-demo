@@ -1,6 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.gradle.language.jvm.tasks.ProcessResources
 
+springBoot {
+    buildInfo()
+}
+
 plugins {
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.0"
