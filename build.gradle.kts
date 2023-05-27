@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.language.jvm.tasks.ProcessResources
 
 plugins {
     id("org.springframework.boot") version "3.1.0"
@@ -33,6 +34,10 @@ tasks.withType<KotlinCompile> {
         freeCompilerArgs = listOf("-Xjsr305=strict")
         jvmTarget = "17"
     }
+}
+
+tasks.withType<ProcessResources> {
+    expand(project.properties)
 }
 
 tasks.withType<Test> {
